@@ -6,3 +6,61 @@ video {
 
   display: block;
 }
+
+img {
+  border: 5px solid #f20732;
+}
+body {
+  background-color: #3e3940;
+}
+
+/* Min main med grid------------------------- */
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+}
+
+main section {
+  grid-column: 2/3;
+}
+
+/* Her starter header---------------------- */
+
+@media (min-width: 400px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+  }
+}
+
+header nav ul {
+  display: flex;
+  gap: 60px;
+  overflow-x: auto;
+  list-style-type: none;
+}
+
+/* Mit splash/forside billede--------------- */
+
+#first_section {
+  /* outline: 1px orange solid; */
+  grid-column: 1/4;
+  padding-bottom: 40px;
+}
+
+.pictures {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.img3 {
+  display: grid;
+  place-content: end right;
+}
