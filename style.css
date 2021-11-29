@@ -36,31 +36,59 @@ main section {
     flex-direction: row;
   }
 }
-
 header nav ul {
   display: flex;
-  gap: 60px;
+  padding: 20px;
   overflow-x: auto;
+  background-color: #5d5d5d;
   list-style-type: none;
 }
 
-/* Mit splash/forside billede--------------- */
-
-#first_section {
-  /* outline: 1px orange solid; */
-  grid-column: 1/4;
-  padding-bottom: 40px;
+li a {
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
 }
 
-.pictures {
+/* Mit splash/forside billede og h1 tekst--------------- */
+@media (min-width: 400px) {
+  #first_section {
+    grid-column: 1/4;
+    aspect-ratio: 16/9;
+    padding-bottom: 40px;
+  }
+}
+.forside {
   display: grid;
 
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 40px;
-  padding-bottom: 40px;
+  place-items: center;
 }
 
-.img3 {
-  display: grid;
-  place-content: end right;
+.forside img,
+h1 {
+  grid-area: 1/1;
+}
+
+h1 {
+  font-family: "bebas neue", sans-serif;
+  font-size: 150px;
+  background-color: #5d5d5d;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+@media (min-width: 200px) {
+  .pictures {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+  }
+
+  .img3 {
+    display: grid;
+    place-content: end right;
+  }
 }
