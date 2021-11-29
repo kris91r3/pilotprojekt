@@ -8,7 +8,7 @@ video {
 }
 
 img {
-  border: 5px solid #f20732;
+  border: 2px solid #f20732;
 }
 body {
   background-color: #3e3940;
@@ -25,9 +25,15 @@ main section {
   grid-column: 2/3;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* Her starter header---------------------- */
 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   header {
     display: flex;
     justify-content: space-between;
@@ -41,14 +47,18 @@ header nav ul {
   padding: 20px;
   overflow-x: auto;
   background-color: #5d5d5d;
+  opacity: 75%;
   list-style-type: none;
+  gap: 20px;
 }
 
 li a {
   font-family: "poppins", sans-serif;
+  font-weight: 700;
   font-size: 2rem;
   text-decoration: none;
   color: black;
+  overflow-x: auto;
 }
 
 /* Mit splash/forside billede og h1 tekst--------------- */
@@ -78,12 +88,12 @@ h1 {
   padding-right: 8px;
 }
 
-@media (min-width: 200px) {
+@media (min-width: 400px) {
   .pictures {
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    gap: 30px;
     padding-bottom: 40px;
   }
 
@@ -91,4 +101,36 @@ h1 {
     display: grid;
     place-content: end right;
   }
+}
+
+/* youtube video iframe---------------- */
+
+.iframe-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 0;
+
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+
+  inset: 0;
+
+  height: 100%;
+
+  width: 100%;
+
+  border: 2px solid #f20732;
+}
+
+.video1 {
+  padding-bottom: 40px;
+}
+
+video {
+  border: 2px solid #f20732;
 }
