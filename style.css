@@ -47,8 +47,9 @@ header nav ul {
   opacity: 75%;
   list-style-type: none;
   gap: 50px;
-  padding-left: 250px;
-  padding-right: 250px;
+  padding-left: 240px;
+  padding-right: 240px;
+  border-radius: 50px 50px;
 }
 
 li a {
@@ -59,7 +60,7 @@ li a {
   color: black;
 }
 a:hover {
-  color: #f20732;
+  color: #b21632;
 }
 
 /* 1. section-------------Mit splash/forside billede og h1 tekst--------------- */
@@ -88,10 +89,19 @@ h1 {
   background-color: #5d5d5d;
   padding-left: 8px;
   padding-right: 8px;
-  border: 5px solid #f20732;
+  box-shadow: 15px 15px #b21632;
 }
 
 /* 2. section-----------billeder--------- */
+
+/* @media (min-width: 400px) {
+  #second_section {
+    grid-column: 1/4;
+    aspect-ratio: 16/9;
+    padding-bottom: 40px;
+    background-color: #5d5d5d;
+  }
+} */
 
 @media (min-width: 400px) {
   .pictures {
@@ -109,7 +119,7 @@ h1 {
 }
 
 #second_section img {
-  border: 2px solid #f20732;
+  box-shadow: 10px 10px #b21632;
 }
 
 /* 3. section ---------video--------- */
@@ -118,9 +128,9 @@ h1 {
   padding-bottom: 40px;
 }
 
-video {
-  border: 2px solid #f20732;
-}
+/* video {
+  box-shadow: 10px 10px #b21632;
+} */
 
 /* 4. section ---- youtube video iframe---------------- */
 
@@ -143,5 +153,5 @@ iframe {
 
   width: 100%;
 
-  border: 2px solid #f20732;
+  /* box-shadow: 10px 10px #b21632; */
 }
