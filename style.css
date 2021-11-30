@@ -120,11 +120,10 @@ h1 {
     gap: 30px;
     padding: 40px;
   }
-
-  .img3 {
-    display: grid;
-    place-content: end right;
-  }
+}
+.img3 {
+  display: grid;
+  place-content: end right;
 }
 
 #second_section img {
