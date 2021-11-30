@@ -30,7 +30,7 @@ main section {
 
 /* Her starter header med navbar---------------------- */
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   header {
     display: flex;
     justify-content: center;
@@ -64,7 +64,7 @@ a:hover {
   color: #980d12;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 990px) {
   a {
     font-size: 1.4rem;
   }
@@ -78,7 +78,7 @@ a:hover {
 
 /* 1. section-------------Mit splash/forside billede og h1 tekst--------------- */
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   #first_section {
     grid-column: 1/4;
     aspect-ratio: 16/9;
@@ -106,13 +106,13 @@ h1 {
 }
 /* Media for responsive tekst------------- */
 
-@media (min-width: 1000px) {
+@media (min-width: 990px) {
   h1 {
     font-size: 6rem;
   }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 400px) {
   .pictures {
     display: grid;
 
