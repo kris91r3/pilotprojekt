@@ -28,7 +28,7 @@ main section {
   box-sizing: border-box;
 }
 
-/* Her starter header---------------------- */
+/* Her starter header med navbar---------------------- */
 
 @media (min-width: 300px) {
   header {
@@ -62,7 +62,8 @@ a:hover {
   color: #f20732;
 }
 
-/* Mit splash/forside billede og h1 tekst--------------- */
+/* 1. section-------------Mit splash/forside billede og h1 tekst--------------- */
+
 @media (min-width: 400px) {
   #first_section {
     grid-column: 1/4;
@@ -90,6 +91,8 @@ h1 {
   border: 5px solid #f20732;
 }
 
+/* 2. section-----------billeder--------- */
+
 @media (min-width: 400px) {
   .pictures {
     display: grid;
@@ -109,7 +112,17 @@ h1 {
   border: 2px solid #f20732;
 }
 
-/* youtube video iframe---------------- */
+/* 3. section ---------video--------- */
+
+.video1 {
+  padding-bottom: 40px;
+}
+
+video {
+  border: 2px solid #f20732;
+}
+
+/* 4. section ---- youtube video iframe---------------- */
 
 .iframe-wrapper {
   position: relative;
@@ -130,13 +143,5 @@ iframe {
 
   width: 100%;
 
-  border: 2px solid #f20732;
-}
-
-.video1 {
-  padding-bottom: 40px;
-}
-
-video {
   border: 2px solid #f20732;
 }
