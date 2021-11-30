@@ -120,14 +120,15 @@ h1 {
     gap: 30px;
     padding: 40px;
   }
-}
-.img3 {
-  display: grid;
-  place-content: end right;
-}
 
-#second_section img {
-  box-shadow: 15px 15px #980d12;
+  .img3 {
+    display: grid;
+    place-content: end right;
+  }
+
+  #second_section img {
+    box-shadow: 15px 15px #980d12;
+  }
 }
 
 /* 3. section ---------video--------- */
