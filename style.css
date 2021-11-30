@@ -30,7 +30,7 @@ main section {
 
 /* Her starter header med navbar---------------------- */
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   header {
     display: flex;
     justify-content: center;
@@ -38,19 +38,19 @@ main section {
     top: 0;
     flex-direction: row;
   }
+}
 
-  header nav ul {
-    display: flex;
-    padding: 15px;
-    overflow-x: auto;
-    background-color: #5d5d5d;
-    opacity: 75%;
-    list-style-type: none;
-    gap: 50px;
-    padding-left: 190px;
-    padding-right: 190px;
-    border-radius: 50px 50px;
-  }
+header nav ul {
+  display: flex;
+  padding: 15px;
+  overflow-x: auto;
+  background-color: #5d5d5d;
+  opacity: 75%;
+  list-style-type: none;
+  gap: 70px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 50px 50px;
 }
 
 li a {
@@ -61,12 +61,12 @@ li a {
   color: black;
 }
 a:hover {
-  color: #b21632;
+  color: #980d12;
 }
 
-@media (min-width: 895px) {
+@media (min-width: 1000px) {
   a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 /* 
@@ -78,7 +78,7 @@ a:hover {
 
 /* 1. section-------------Mit splash/forside billede og h1 tekst--------------- */
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   #first_section {
     grid-column: 1/4;
     aspect-ratio: 16/9;
@@ -98,31 +98,27 @@ h1 {
 
 h1 {
   font-family: "bebas neue", sans-serif;
-  font-size: 10vw;
+
   background-color: #5d5d5d;
   padding-left: 8px;
   padding-right: 8px;
-  box-shadow: 15px 15px #b21632;
+  box-shadow: 15px 12px #980d12;
+}
+/* Media for responsive tekst------------- */
+
+@media (min-width: 1000px) {
+  h1 {
+    font-size: 6rem;
+  }
 }
 
-/* 2. section-----------billeder--------- */
-
-/* @media (min-width: 400px) {
-  #second_section {
-    grid-column: 1/4;
-    aspect-ratio: 16/9;
-    padding-bottom: 40px;
-    background-color: #5d5d5d;
-  }
-} */
-
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .pictures {
     display: grid;
 
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    padding-bottom: 40px;
+    padding: 40px;
   }
 
   .img3 {
@@ -132,17 +128,17 @@ h1 {
 }
 
 #second_section img {
-  box-shadow: 10px 10px #b21632;
+  box-shadow: 15px 15px #980d12;
 }
 
 /* 3. section ---------video--------- */
 
 .video1 {
-  padding-bottom: 40px;
+  padding: 40px;
 }
 
 /* video {
-  box-shadow: 10px 10px #b21632;
+  box-shadow: 10px 10px #980d12;
 } */
 
 /* 4. section ---- youtube video iframe---------------- */
@@ -166,5 +162,7 @@ iframe {
 
   width: 100%;
 
-  /* box-shadow: 10px 10px #b21632; */
+  padding: 40px;
+
+  /* box-shadow: 10px 10px #980d12; */
 }
