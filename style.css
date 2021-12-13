@@ -11,7 +11,7 @@ body {
   background-color: #3e3940;
 }
 
-/* Min main med grid------------------------- */
+/* Min main med grid----------------------------------------------------------- */
 
 main {
   display: grid;
@@ -28,7 +28,7 @@ main section {
   box-sizing: border-box;
 }
 
-/* Her starter header med navbar---------------------- */
+/* Her starter header med navbar--------------------------------------------------- */
 
 @media (min-width: 480px) {
   header {
@@ -60,17 +60,20 @@ li a {
   text-decoration: none;
   color: black;
 }
+
+/* hover effekt på tekst i nav--------- */
 a:hover {
   color: #980d12;
 }
 
+/* media for at gøre nav-tekst responsiv-------- */
 @media (min-width: 990px) {
   a {
     font-size: 1.3rem;
   }
 }
 
-/* 1. section-------------Mit splash/forside billede og h1 tekst--------------- */
+/* 1. section-------------Mit splash/forside billede og h1 tekst-------------------------------- */
 
 @media (min-width: 480px) {
   #first_section {
@@ -106,9 +109,16 @@ h1 {
   }
 }
 
-/* 2. section billeder og citater------ */
+/* 2. section billeder og citater------------------------------------------------------- */
 
 @media (min-width: 400px) {
+  /* #second_section {
+    grid-column: 1/4;
+    aspect-ratio: 16/9;
+    padding-bottom: 40px;
+    background-color: #5d5d5d;
+  } */
+
   .pictures {
     display: grid;
 
@@ -134,9 +144,9 @@ h1 {
     font-size: 0.9rem;
   }
 }
-/* 3. section ---------video--------- */
+/* 3. section ---------video--------------------------------------------------------------- */
 
-.video1 {
+video {
   padding: 20px;
 }
 
@@ -144,7 +154,7 @@ h1 {
   box-shadow: 10px 10px #980d12;
 } */
 
-/* 4. section ---- youtube video iframe---------------- */
+/* 4. section ---- youtube video iframe-------------------------------------------------------- */
 
 .iframe-wrapper {
   position: relative;
