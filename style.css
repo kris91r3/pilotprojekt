@@ -33,7 +33,7 @@ main section {
 @media (min-width: 480px) {
   header {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     position: sticky;
     top: 0;
     flex-direction: row;
@@ -42,12 +42,13 @@ main section {
 
 header nav ul {
   display: flex;
-  padding: 15px;
+  padding: 10px 90px 10px 90px;
   overflow-x: auto;
   background-color: #5d5d5d;
   opacity: 75%;
   list-style-type: none;
   gap: 60px;
+  border-radius: 25px;
   width: fit-content;
 }
 
@@ -64,10 +65,14 @@ a:hover {
   color: #980d12;
 }
 
+a {
+  font-size: 1rem;
+}
+
 /* media for at gøre nav-tekst responsiv-------- */
-@media (min-width: 990px) {
+@media (min-width: 800px) {
   a {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 }
 
